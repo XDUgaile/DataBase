@@ -1,0 +1,224 @@
+* {
+    font-family: "Microsoft YaHei";
+}
+
+QListWidget,QListView[class="News"] {
+    border: 1px solid #ccd1d9;
+    outline: none;
+    padding: 0;
+}
+
+QListWidget::item[class="News"],QListView::item[class="News"] {
+    height: 35px;
+    padding-left: 5px;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+QListWidget::item:selected[class="News"],QListView::item:selected[class="News"] {
+    background-color: #2C974B;
+    color: #FFFFFF;
+}
+
+QWidget{
+    background-color: rgb(255, 255, 255);
+}
+
+QWidget:focus{
+    outline: none;
+}
+
+QPushButton[class="Aqua"] {
+    border-radius: 4px;
+    height: 30px;
+    background-color: #3bafda;
+}
+
+QPushButton:hover[class="Aqua"] {
+    background-color: #4fc1e9;
+}
+
+QPushButton:pressed[class="Aqua"] {
+    background: qradialgradient(cx:0.5,
+    cy: 0.5,
+    fx: 0.5,
+    fy: 0.5,
+    radius: 1.5,
+    stop: 0.2 #4fc1e9,
+    stop: 0.8 #3bafda);
+}
+
+QLineEdit {
+    border: 1px solid #aab2bd;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 5px 8px;
+    selection-background-color: lightgray;
+}
+
+QLineEdit:focus {
+    border: 1px solid #3bafda;
+}
+
+
+/*QComboBox*/
+QComboBox {
+    border: 1px solid #aab2bd;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 3px 5px;
+}
+
+QComboBox::drop-down {
+    background-color: transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(./res/style/img/more.png);
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
+QComboBox::!editable:on {
+    border: 1px solid #3bafda;
+}
+
+QComboBox QAbstractItemView{
+    border: 2px solid #e6e9ed;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item{
+    height: 30px;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+QComboBox QAbstractItemView::item:hover{
+    background-color: #3bafda;
+    color: #FFFFFF;
+}
+
+QComboBox QAbstractItemView::item:selected{
+    background-color: #3bafda;
+    color: #FFFFFF;
+}
+
+/*QListWidget,QListView*/
+QListWidget[class="Normal"],QListView[class="Normal"] {
+    font: 14pt;
+    border: 1px solid #ccd1d9;
+    outline: none;
+    padding: 0;
+}
+
+QListWidget::item[class="Normal"],QListView::item [class="Normal"] {
+    height: 45px;
+    padding-left: 5px;
+    border-bottom: 1px solid #e6e9ed;
+}
+
+QListWidget::item:hover[class="Normal"],QListView::item:hover[class="Normal"] {
+    background-color: #3bafda;
+    color: #FFFFFF;
+}
+
+QListWidget::item:selected[class="Normal"],QListView::item:selected[class="Normal"] {
+    background-color: #3bafda;
+    color: #FFFFFF;
+}
+
+/*QTableWidget,QTableView*/
+QHeaderView{
+    height: 40px;
+    border: 0 solid rgba(255, 255, 255, 0);
+    background-color: #fff;
+    border-bottom: 2px solid #e6e9ed;
+}
+
+QHeaderView::section{
+    height: 40px;
+    border: 0 solid rgba(255, 255, 255, 0);
+    background-color: #fff;
+    outline: none;
+}
+
+QTableWidget,QTableView{
+    border: 1px solid #ccd1d9;
+    alternate-background-color: #f1f2f6;
+    background-color: #fff;
+    selection-background-color : #3bafda;
+}
+
+/*QTabWidget*/
+QTabWidget{
+    border:1px solid #ccd1d9;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+}
+
+QTabBar::tab {
+    padding: 8px 30px;
+    background-color: #fff;
+}
+
+QTabBar::tab:first {
+    border-top-left-radius: 3px;
+}
+
+QTabBar::tab:!selected {
+    border-left: 1px solid #ccd1d9;
+    background-color: #e6e9ed;
+}
+
+/*QScrollBar*/
+QScrollBar:vertical {
+    max-width: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: 1px solid #ccd1d9;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #cdced1;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #a9b2bd;
+}
+
+QScrollBar::add-line:vertical {
+    background-color: #ccd1d9;
+
+}
+
+QScrollBar::add-page:vertical,QScrollBar::sub-page:vertical {
+    background-color: #e6e9ed;
+}
+
+QScrollBar:horizontal {
+    max-height: 13px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-right: 1px solid #ccd1d9;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #cdced1;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #a9b2bd;
+}
+
+QScrollBar::add-line:horizontal {
+    background-color: #ccd1d9;
+}
+
+QScrollBar::add-page:horizontal,QScrollBar::sub-page:horizontal {
+    background-color: #e6e9ed;
+}
+
